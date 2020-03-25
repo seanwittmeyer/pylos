@@ -44,7 +44,7 @@ class Pylos extends CI_Controller {
 			'pagetitle' => 'Hydra Import', // Capitalize the first letter
 			'contenttitle' => 'Hydrashare',
 			'section' => array('apps', 'hydra'),
-			'filter' => true;
+			'filter' => true
 		);
 		$data['loadjs']['hydrashare'] = true;
 		$this->load->view('app/pylos/templates/header', $data);

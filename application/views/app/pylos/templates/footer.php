@@ -304,7 +304,7 @@
 		<div class="row">
 			<div class="col-sm-3"><h3 class="text-left hidden-lg"><a href="/pylos" style="color:#3e3f3a;">Pylos</a></h3></div>
 			<div class="col-sm-6"><h5 class="text-left">This is a repository of computational and analytical design tools used at ZGF, <a href="/get-started">learn more →</a></h5><h5 class="text-left">You can start at our <a href="/get-started">homepage</a>, see what <a href="/status">Pylos can do</a>, and track progress in our <a href="/roadmap">development roadmap</a>. </h5></div>
-			<div class="col-sm-3"><h5 class="text-right">Pylos last compiled on February 16, 2020</h5></div>
+			<div class="col-sm-3"><h5 class="text-right">Pylos last compiled on March 25, 2020</h5></div>
 		</div>
 	</footer>
 	<!-- Javascript -->

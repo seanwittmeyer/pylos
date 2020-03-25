@@ -98,7 +98,7 @@
 							</div>
 							<div class="col-lg-3 ">
 								<div class="meta meta-corner">
-									<?php foreach (array('dependency'=>'dependencies','phase'=>'phases','tag'=>'tags','project'=>'projects') as $j => $k) { 
+									<?php foreach (array('dependency'=>'dependencies','phase'=>'phases','stragegy'=>'strategies','tag'=>'tags','project'=>'projects') as $j => $k) { 
 										foreach (${$k} as $tag) { ?>
 										<a href="<?php echo site_url("pylos/$k/$tag"); ?>" class="<?php echo $k; ?>-corner" data-toggle="tooltip" data-placement="bottom" title="<?php echo ucfirst($j); ?>"><?php echo $tag; ?></a><?php } ?>
 									<?php } ?> 

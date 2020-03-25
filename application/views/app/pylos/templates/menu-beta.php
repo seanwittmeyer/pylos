@@ -20,7 +20,7 @@
 	<div class="col-xs-5">
 		<div class="headline-parent"><div class="text-left headline"><a href="<?php echo site_url("pylos"); ?>" style="color:#3e3f3a;">Pylos</a></div></div>
 		<ul class="site-nav-pills" role="tablist">
-			<li role="presentation" class="<?php if ($section[0] == 'start') echo 'active'; ?>"><a href="#menu-start" aria-controls="menu-start" role="tab" data-toggle="tab" aria-expanded="false">Start Here</a></li>
+			<li role="presentation" class="<?php if ($section[0] == 'start' or $section[0] == false) echo 'active'; ?>"><a href="#menu-start" aria-controls="menu-start" role="tab" data-toggle="tab" aria-expanded="false">Start Here</a></li>
 			<li role="presentation" class="<?php if ($section[0] == 'search') echo 'active'; ?>"><a href="#menu-search" aria-controls="menu-search" role="tab" data-toggle="tab" aria-expanded="false">Search</a></li>
 			<li role="presentation" class="<?php if ($section[0] == 'strategies') echo 'active'; ?>"><a href="#menu-strategies" aria-controls="menu-strategies" role="tab" data-toggle="tab" aria-expanded="false">Strategies</a></li>
 			<li role="presentation" class="<?php if ($section[0] == 'library') echo 'active'; ?>"><a href="#menu-resources" aria-controls="menu-resources" role="tab" data-toggle="tab" aria-expanded="false">Resource Library</a></li>
@@ -36,12 +36,12 @@
 	<div class="col-xs-7">
 		<div class="tab-content site-nav-tabs">
 			<!-- Tab - start -->
-			<div role="tabpanel" class="tab-pane fade<?php if ($section[0] == 'start') echo ' active in'; ?>" id="menu-start">
+			<div role="tabpanel" class="tab-pane fade<?php if ($section[0] == 'start' or $section[0] == false) echo ' active in'; ?>" id="menu-start">
 				<div class="headline-parent"><div class="text-left headline"><a href="<?php echo site_url("pylos"); ?>" style="color:#3e3f3a;">For PA's and PM's</a></div></div>
 				<p>Understand the what, when, and how of pushing your projects with resources sorted by phase.
 				<a href="/pylos/phases" class="site-nav-link">Strategies by Phase</a></p>
-				<div class="text-left headline"><a href="<?php echo site_url("pylos/tools"); ?>" style="color:#3e3f3a;">Design Resources</a></div>
-				<p>Maybe a single sentence on the principles with a link to its page. <a href="/taxonomy" class="site-nav-link">Governing Feature</a></p>
+				<div class="text-left headline"><a href="<?php echo site_url("lunch-and-learn"); ?>" style="color:#3e3f3a;">Lunch and Learns</a></div>
+				<p>The PPT is helping design teams connect concepts with action in the design process through our lunch and learns. <a href="/lunch-and-learn" class="site-nav-link">2020 Lunch and Learns</a></p>
 			</div>
 			<!-- /Tab -->
 			<!-- Tab - search -->
@@ -54,8 +54,8 @@
 			<!-- /Tab -->
 			<!-- Tab - map -->
 			<div role="tabpanel" class="tab-pane fade<?php if ($section[0] == 'strategies') echo ' active in'; ?>" id="menu-strategies">
-				<div class="headline-parent"><div class="text-left headline"><a href="<?php echo site_url("pylos"); ?>" style="color:#3e3f3a;">Phases</a></div></div>
-				<p>Explore strategies by project phase and see when and how to best engage with your projects. <a href="/pylos/phases" class="site-nav-link">See the analysis menu</a></p>
+				<div class="headline-parent"><div class="text-left headline"><a href="<?php echo site_url("pylos/phases"); ?>" style="color:#3e3f3a;">Phases</a></div></div>
+				<p>Explore strategies by project phase and see when and how to best engage with your projects. <a href="/pylos/phases" class="site-nav-link">See the analysis menu</a><a href="/pylos/strategies" class="site-nav-link">See all strategies</a></p>
 				<ul class="site-nav-promoted-list i-fixed">
 					<li><a href="<?php echo site_url("pylos/phases/programming"); ?>"><i class="fa fa-sitemap"></i> Programming</a></li>
 					<li><a href="<?php echo site_url("pylos/phases/pre-design"); ?>"><i class="fa fa-cubes"></i> Pre Design</a></li>
@@ -67,7 +67,7 @@
 					<li><a href="<?php echo site_url("pylos/phases/post-construction"); ?>"><i class="fa fa-key"></i> Post Construction</a></li>
 				</ul>
 				<div class="clear"></div>
-				<div class="text-left headline"><a href="<?php echo site_url("pylos"); ?>" style="color:#3e3f3a;">Themes</a></div>
+				<div class="text-left headline"><a href="<?php echo site_url("pylos/themes"); ?>" style="color:#3e3f3a;">Themes</a></div>
 				<p>You can also find design and analysis strategies related to a specific theme or certification category. <a href="/pylos/themes" class="site-nav-link">More about themes</a></p>
 				<ul class="site-nav-list">
 					<?php foreach ($this->shared->get_data2('pylos_taxonomy',false,array('type'=>'theme'),true,array('title','slug')) as $menu_theme) { ?><li><a href="<?php echo site_url("pylos/themes/".$menu_theme['slug']); ?>"><?php echo $menu_theme['title']; ?></a></li><?php } ?> 

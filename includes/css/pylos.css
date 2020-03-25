@@ -785,6 +785,15 @@ h1 .label, h2 .label, h3 .label {
 	letter-spacing: -.04em;
 	line-height: 1.2em;
 }
+.pylos-section-strategy-context .questions {
+	max-height: 280px;
+	overflow: hidden;
+	transition: max-height .5s;
+}
+.pylos-section-strategy-context .questions:hover {
+	max-height: 1500px;
+	overflow-y: auto;
+}
 .pylos-section-strategy-context .questions ul {
 	padding: 0;
 }

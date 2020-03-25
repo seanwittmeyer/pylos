@@ -1243,6 +1243,9 @@ class Pylos_model extends CI_Model {
 					'description' => $post['description'],
 					'time' => $post['time'],
 					'duration' => $post['duration'],
+					'staff' => $post['staff'],
+					'difficulty' => $post['difficulty'],
+					'questions' => $post['questions'],
 					'image' => (isset($post['image'])) ? $post['image']: '',
 					'url' => (isset($post['url'])) ? $post['url']: '',
 					'title' => $post['title'],
@@ -1264,7 +1267,7 @@ class Pylos_model extends CI_Model {
 							);
 						}
 					}
-					$tags_flag = true;				
+					$tags_flag = true;
 				}
 				if (isset($post['terms']) && !empty($post['terms'])) {
 					$tags = array_map('trim',explode(",",$post['terms']));
@@ -1756,6 +1759,9 @@ class Pylos_model extends CI_Model {
 					'duration' => $post['duration'],
 					'title' => $post['title'],
 					'excerpt' => $post['excerpt'],
+					'staff' => $post['staff'],
+					'difficulty' => $post['difficulty'],
+					'questions' => $post['questions'],
 					'user' => $user->id,
 				);
 				break;

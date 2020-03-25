@@ -37,6 +37,10 @@
 										<div class="col-md-9"><textarea type="text" class="pylos-summernote" id="pylos_newelement_description" name="payload[description]" placeholder="Describe this and include how it works and any information people will need to use it..."></textarea></div>
 									</div>
 									<div class="form-group">
+										<label for="payload[questions]" class="col-md-3 control-label">Core questions this strategy or type of study address.</label>
+										<div class="col-md-9"><textarea type="text" class="pylos-summernote" id="pylos_newelement_questions" name="payload[questions]" placeholder="Using bullet points, what are the core questions that this strategy or type of study strive to address?"></textarea></div>
+									</div>
+									<div class="form-group">
 										<label for="themes" class="col-md-3 control-label">Themes</label>
 										<div class="col-md-9">
 											<p class="small">What themes does this strategy relate to? Examples include performance themes like energy and biophilia or certification categories like LEED's materials credits.</p>
@@ -92,10 +96,30 @@
 										</div>
 									</div>
 									<div class="form-group">
+										<label class="col-md-3 control-label" style="padding-top: 16px;">Difficulty</label>
+										<div class="col-sm-3" style="padding: 0 5px;">
+											<select name="payload[difficulty]" class="selectpicker btn-sm" data-width="100%" data-size="5">
+												<option value="Anyone">Easy, Anyone</option>
+												<option value="Design Team">Easy, Design/Project Team</option>
+												<option value="Client">Easy, Client</option>
+												<option value="In-house">Medium, PPT / In-house Consultant</option>
+												<option value="Consultant">Difficult, Consultant</option>
+												<option value="Specialty">>Difficult, Specialst Needed</option>
+											</select>
+											<p class="small  col-sm-12">How long would this take to complete?</p>
+										</div>
+										<label class="col-md-1 control-label" for="payload[staff]" style="padding-top: 16px;">Staff</label>
+										<div class="col-sm-5" style="padding: 0 5px;">
+											<div class="col-md-12"><input type="text" class="form-control" id="pylos_newelement_staff" name="payload[staff]" placeholder=""></div>
+											<p class="small  col-sm-12">Who are our in-house resources?</p>
+										</div>
+									</div>
+									
+									<div class="form-group">
 										<label for="payload[url]" class="col-md-3 control-label">Related Link</label>
 										<div class="col-md-9"><input type="text" class="form-control" id="pylos_newelement_source" name="payload[source]" placeholder="http://"></div>
 									</div>
-				
+									
 									<div class="form-group">
 										<label for="upload" class="col-md-3 control-label">Image</label>
 										<div class="col-md-9">

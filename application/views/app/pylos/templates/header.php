@@ -19,7 +19,7 @@
 	<link href="/includes/css/font-awesome.min.css" rel="stylesheet" />
 	<link href="/includes/css/summernote.css" rel="stylesheet" />
 	<link href="/includes/css/bootstrap-select.min.css" rel="stylesheet" />
-	<link href="/includes/css/pylos.css?r20200217a" rel="stylesheet" />
+	<link href="/includes/css/pylos.css?r20200225a" rel="stylesheet" />
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

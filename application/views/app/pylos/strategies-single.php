@@ -26,7 +26,7 @@
 											<label for="payload[title]" class="label-floating">Strategy Title</label>
 											<input type="text" class="form-control" style="margin-bottom: 10px;" id="pylos-edit-strategy-title" name="payload[title]" placeholder="<?php echo $strategy['slug']; ?>" value="<?php echo ($strategy) ? $strategy['title'] : $strategy['slug']; ?>">
 										</div>
-										<div class="col-sm-3">
+										<div class="col-sm-2">
 											<label for="payload[duration]" class="label-floating">Duration</label>
 											<div class="" style="margin: 4px -10px;" data-toggle="tooltip" data-placement="left" title="approximately how many billable hours would a PM expect?" >
 												<select name="payload[duration]" class="selectpicker btn-sm" data-width="100%" data-size="5">
@@ -42,7 +42,7 @@
 												</select>
 											</div>
 										</div>
-										<div class="col-sm-3">
+										<div class="col-sm-2">
 											<label for="payload[time]" class="label-floating">Time</label>
 											<div class="" style="margin: 4px -10px;" data-toggle="tooltip" data-placement="left" title="approximately how long would the whole process take?" >
 												<select name="payload[time]" class="selectpicker btn-sm" data-width="100%" data-size="5">
@@ -58,11 +58,28 @@
 												</select>
 											</div>
 										</div>
+										<div class="col-sm-2">
+											<label for="payload[difficulty]" class="label-floating">Difficulty</label>
+											<div class="" style="margin: 4px -10px;" data-toggle="tooltip" data-placement="left" title="who generally does this type of study?" >
+												<select name="payload[difficulty]" class="selectpicker btn-sm" data-width="100%" data-size="5">
+													<option value="Anyone"<?php if ($strategy['difficulty'] == "Anyone") echo " selected"; ?>>Easy, Anyone</option>
+													<option value="Design Team"<?php if ($strategy['difficulty'] == "Design Team") echo " selected"; ?>>Easy, Design/Project Team</option>
+													<option value="Client"<?php if ($strategy['difficulty'] == "Client") echo " selected"; ?>>Easy, Client</option>
+													<option value="In-house"<?php if ($strategy['difficulty'] == "In-House") echo " selected"; ?>>Medium, PPT / In-house Consultant</option>
+													<option value="Consultant"<?php if ($strategy['difficulty'] == "Consultant") echo " selected"; ?>>Difficult, Consultant</option>
+													<option value="Specialty"<?php if ($strategy['difficulty'] == "Specialty") echo " selected"; ?>>Difficult, Specialst Needed</option>
+												</select>
+											</div>
+										</div>
 										<div class="col-sm-12">
 											<label for="payload[excerpt]" class="label-floating">Short and to the point, what is this strategy?</label>
 											<input type="text" class="form-control" style="margin-bottom: 10px;" id="pylos-edit-strategy-excerpt" name="payload[excerpt]" placeholder="<?php $this->pylos_model->echovar($strategy['excerpt']); ?>" value="<?php $this->pylos_model->echovar($strategy['excerpt']); ?>">
+											<label for="payload[staff]" class="label-floating">Who are our in-house experts or consultants?</label>
+											<input type="text" class="form-control" style="margin-bottom: 10px;" id="pylos-edit-strategy-staff" name="payload[staff]" placeholder="<?php $this->pylos_model->echovar($strategy['staff']); ?>" value="<?php $this->pylos_model->echovar($strategy['staff']); ?>">
 											<label for="payload[description]" class="label-floating">Longer Description</label>
 											<textarea type="text" class="pylos-summernote" id="pylos-edit-strategy-description" name="payload[description]" placeholder="Describe the phase in simple and clear language, use bullet points too!"><?php $this->pylos_model->echovar($strategy['description']); ?></textarea>
+											<label for="payload[questions]" class="label-floating">Core Questions</label>
+											<textarea type="text" class="pylos-summernote" id="pylos-edit-strategy-questions" name="payload[questions]" placeholder="Using bullet points, what are the core questions that this strategy or type of study strive to address?"><?php $this->pylos_model->echovar($strategy['questions']); ?></textarea>
 										</div>
 									</div>
 									<div class="row" style="padding-top: 20px;">	
@@ -87,24 +104,31 @@
 						<!-- strategy info -->
 						<div class="row pylos-section-strategy-masthead">
 							<div class="col-sm-7"><h1 style="font-size: 4em;margin-top: 0;line-height: .8em;"><?php echo $strategy['title']; ?></h1></div>
-							<div class="col-sm-5"><div class="row">
-							<div class="col-sm-4"><div class="strategy-image"></div></div>
-							<div class="col-sm-8"><div class="strategy-image"></div></div>
-							</div></div>
+							<div class="col-sm-5 hide">
+								<div class="row">
+									<div class="col-sm-4"><div class="strategy-image"></div></div>
+									<div class="col-sm-8"><div class="strategy-image"></div></div>
+								</div>
+							</div>
 						</div>
 						<div class="row pylos-section-strategy-description">
 							<div class="col-sm-7">
-							<h2><?php echo $strategy['excerpt']; ?></h2>
+							<h2 style="margin: 13px 0;"><?php echo $strategy['excerpt']; ?> <a href="#" onclick="$('#pylos-edit-strategy').show('fast'); return false;"><span class="fa fa-pencil"></span> </a></h2>
 							<div class="clear"></div>
 							<li><i class="fa fa-money"></i> ~<?php echo $strategy['time']; ?></li>
 							<li><i class="fa fa-calendar-check-o"></i> ~<?php echo $strategy['duration']; ?></li>
-							<li><i class="fa fa-hand-o-right"></i> Easy, In-house</li>
+							<li><i class="fa fa-hand-o-right"></i> <?php echo $strategy['difficulty']; ?></li>
+							<div class="clear"></div>
+							<li><i class="fa fa-user"></i> <?php echo $strategy['staff']; ?></li>
+
 						</div>
-							<div class="col-sm-5"><div class="row">
-								<div class="col-sm-4" style="visibility: hidden;"><div class="strategy-image"></div></div>
-								<div class="col-sm-4"><div class="strategy-image"></div></div>
-								<div class="col-sm-4"><div class="strategy-image"></div></div>
-							</div></div>
+							<div class="col-sm-5 hide">
+								<div class="row">
+									<div class="col-sm-4" style="visibility: hidden;"><div class="strategy-image"></div></div>
+									<div class="col-sm-4"><div class="strategy-image"></div></div>
+									<div class="col-sm-4"><div class="strategy-image"></div></div>
+								</div>
+							</div>
 						</div>
 						<hr>
 						<div class="row pylos-section-strategy-context">
@@ -112,21 +136,16 @@
 								<h1 style="margin: 0;"><i class="fa fa-crosshairs"></i></h1>
 								<h3 style="margin-top: 0;">Key Terms &amp; Metrics</h3>
 								<div class="row">
-									<div class="col-sm-4"><a><span>DF</span>Daylight Factor</a></div>
-									<div class="col-sm-4"><a><span>sDA</span>Spatial Daylight Autonomy</a></div>
-									<div class="col-sm-4"><a><span>UDI</span>Useful Daylight Illuminance</a></div>
-									<div class="col-sm-4"><a><span>ASE</span>Annual Sunlight Exposure</a></div>
-									<div class="col-sm-4"><a><span>UTCI</span>Daylight Autonomy</a></div>
+									<div class="col-sm-4"><a><span>LCA</span>Life Cycle Assessment</a></div>
+									<div class="col-sm-4"><a><span>GWP</span>Global Warming Potential</a></div>
+									<div class="col-sm-4"><a><span>SCM</span>Supplementary Cementitious Materials</a></div>
+									<div class="col-sm-4"><a><span>EPD</span>Environmental Product Declarations</a></div>
 								</div>
 							</div>
 							<div class="col-md-6 questions">
 								<h1 style="margin: 0;"><i class="fa fa-lightbulb-o"></i></h1>
 								<h3 style="margin-top: 0;">Core Questions</h3>
-								<ul>
-									<li>How can I use daylight as the primary source of light during the day?</li>
-									<li>How can I maximize useful daylight while control glare?</li>
-									<li>How can I optimize massings to harness solar illuminance?</li>
-								</ul>
+								<?php echo $strategy['questions']; ?>
 							</div>
 						</div>
 						<hr>
