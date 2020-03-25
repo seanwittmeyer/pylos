@@ -7,7 +7,7 @@
  * a single spot for them instead of having duplicate functions all over.
  *
  * Version 1.0.0 (20190523 2336)
- * Edited by Sean Wittmeyer (sean@wittmeyer.io)
+ * Edited by Sean Wittmeyer (theseanwitt@gmail.com)
  * 
  */
 

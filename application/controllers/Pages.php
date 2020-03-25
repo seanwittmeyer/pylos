@@ -7,7 +7,7 @@
  * This script is the controller for the static pages on the site. Based on the CI tutorial.
  *
  * Version 1.4.5 (2014 04 23 1530)
- * Edited by Sean Wittmeyer (sean@zilifone.net)
+ * Edited by Sean Wittmeyer (theseanwitt@gmail.com)
  * 
  */
 

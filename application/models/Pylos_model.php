@@ -7,7 +7,7 @@
  * a single spot for them instead of having duplicate functions all over.
  *
  * Version 2.0 (2018.08.25.1340$2)
- * Edited by Sean Wittmeyer (sean@zilifone.net)
+ * Edited by Sean Wittmeyer (theseanwitt@gmail.com)
  * 
  */
 
@@ -2592,7 +2592,7 @@ class Pylos_model extends CI_Model {
 	    $this->email->clear();
 	
 	    $this->email->to($to->email);
-	    $this->email->from('sean@zilifone.net');
+	    $this->email->from('theseanwitt@gmail.com');
 	    $this->email->subject($defaults['site'].$subject);
 	    $this->email->message("Hi {$to->first_name},<br>{$message}{$defaults['footer']}");
 	    $this->email->send();

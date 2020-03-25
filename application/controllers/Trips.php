@@ -6,7 +6,7 @@
  * This is where the ski nonsense starts.
  *
  * Version 2.0 (2019.04.08.1151$2)
- * Edited by Sean Wittmeyer (sean@zilifone.net)
+ * Edited by Sean Wittmeyer (theseanwitt@gmail.com)
  * 
  */
 

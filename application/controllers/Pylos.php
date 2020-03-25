@@ -6,7 +6,7 @@
  * The pylos controller takes in URL requests and calls relevant models then diverts them to views in the site.
  *
  * Version 2.1.1 (2020.02.14.1028$2)
- * Edited by Sean Wittmeyer (sean@wittmeyer.io)
+ * Edited by Sean Wittmeyer (theseanwitt@gmail.com)
  * 
  */
 

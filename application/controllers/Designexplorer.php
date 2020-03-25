@@ -6,7 +6,7 @@
  * This controller adds design explorer to builder as an app.
  *
  * Version 1.0 (2018.07.23.1020$2)
- * Edited by Sean Wittmeyer (sean@zilifone.net)
+ * Edited by Sean Wittmeyer (theseanwitt@gmail.com)
  * 
  */
 

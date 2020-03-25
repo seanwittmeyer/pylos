@@ -9,7 +9,7 @@
  * beyond the development of the supported engine addins.
  *
  * Version 1.0.0 (20190523 2307)
- * Edited by Sean Wittmeyer (sean@wittmeyer.io)
+ * Edited by Sean Wittmeyer (theseanwitt@gmail.com)
  * 
  */
 

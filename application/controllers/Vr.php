@@ -7,7 +7,7 @@
  * authenticated by key, session user, or the public..
  *
  * Version 1.4.5 (2017 09 17 1738)
- * Edited by Sean Wittmeyer (sean@zilifone.net)
+ * Edited by Sean Wittmeyer (theseanwitt@gmail.com)
  * 
  */
 
