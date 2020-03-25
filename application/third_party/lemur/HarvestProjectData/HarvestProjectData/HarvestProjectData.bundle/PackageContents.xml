@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationPackage Name="HarvestProjectData" Description="Harvest Model Health Data from Revit Models" Author="Trevor Taylor, Sean Wittmeyer, and Stephanie Fitzgerald">
+  <CompanyDetails Name="ZGF" Url="" Email="sean.wittmeyer@zgf.com, trevor.taylor@zgf.com, stephanie.fitzgerald@ideatesoftware.com"/>
+  <Components Description="Harvest Model Health Data">
+    <RuntimeRequirements SeriesMax="R2020" SeriesMin="R2020" Platform="Revit" OS="Win64"/>
+    <ComponentEntry LoadOnRevitStartup="True" LoadOnCommandInvocation="False" AppDescription="Harvest Project Data" ModuleName="./Contents/HarvestProjectData.addin" Version="1.0.0" AppName="HarvestProjectData"/>
+  </Components>
+</ApplicationPackage>

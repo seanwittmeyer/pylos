@@ -1,0 +1,4 @@
+# say no to execution, this'll output php as text.
+RemoveHandler .php .phtml .php3
+RemoveType .php .phtml .php3
+php_flag engine off

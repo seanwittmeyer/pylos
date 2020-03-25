@@ -1,0 +1,1 @@
+<?php echo $this->shared->weather('148.167.2.30'); ?>

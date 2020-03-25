@@ -4,14 +4,27 @@
 */cache/*
 !*/cache/index.html
 !*/cache/.htaccess
-
-user_guide_src/build/*
-user_guide_src/cilexer/build/*
-user_guide_src/cilexer/dist/*
-user_guide_src/cilexer/pycilexer.egg-info/*
+.nova/*
+.DS_Store
+.DS_Store?
 
 #codeigniter 3
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
+composer.phar
+composer.lock
 /vendor/
+sources/*
+
+#pylos content
+upload/img/*
+upload/vr/*
+store/*
+!store/.htaccess
+includes/app/de/design_explorer_data/*
+
+#pylos config
+.env.production
+.env.development
+application/config/development/*

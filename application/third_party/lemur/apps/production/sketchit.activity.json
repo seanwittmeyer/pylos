@@ -1,0 +1,26 @@
+{
+    "commandLine": [
+        "$(engine.path)\\\\revitcoreconsole.exe /al $(appbundles[SketchItApp].path)"
+    ],
+    "parameters": {
+        "sketchItInput": {
+            "verb": "get",
+            "description": "SketchIt input parameters",
+            "required": true,
+            "localName": "SketchItInput.json"
+        },
+        "result": {
+            "verb": "put",
+            "description": "Results",
+            "required": true,
+            "localName": "sketchIt.rvt"
+        }
+    },
+    "id": "lemur.SketchItActivity+test",
+    "engine": "Autodesk.Revit+2018",
+    "appbundles": [
+        "lemur.SketchItApp+test"
+    ],
+    "description": "Creates walls and floors from an input JSON file.",
+    "version": 1
+}

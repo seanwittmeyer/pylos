@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="DBApplication">
+    <Name>Harvest Project Data</Name>
+    <FullClassName>HarvestProjectData.Command</FullClassName>
+    <Text>Harvest Project Data</Text>
+    <Description>Harvest Project Data</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <Assembly>.\HarvestProjectData.dll</Assembly>
+    <AddInId>176188B5-6FF1-4C77-B296-11B51F1DF277</AddInId>
+    <VendorId>ZGF</VendorId>
+    <VendorDescription>ZGF</VendorDescription>
+  </AddIn>
+</RevitAddIns>

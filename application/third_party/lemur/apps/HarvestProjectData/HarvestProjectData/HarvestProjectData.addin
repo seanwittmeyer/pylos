@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  
+  <AddIn Type="Command">
+    <Assembly>HarvestProjectData.dll</Assembly>
+    <AddInId>0859872F-3C12-429E-BC59-AEDB39824D80</AddInId>
+    <FullClassName>HarvestProjectData.ExportProjectHealthData</FullClassName>
+    <Text>Harvest Project Data</Text>
+	<VendorId>ZGFA</VendorId>
+	<VendorDescription>ZGF Architects LLP</VendorDescription>
+    <Description>blah, blah, blah</Description>
+    <VisibilityMode>NotVisibleInFamily</VisibilityMode>
+    <VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
+    <LanguageType>Unknown</LanguageType>
+  </AddIn>
+
+
+
+</RevitAddIns>
+

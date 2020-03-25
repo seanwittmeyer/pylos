@@ -1,0 +1,51 @@
+Listing from Sharon
+
+complexity web page:
+topics Ð 
+About complexity (Intro)
+	History
+	Applications
+	Definitions/Key concepts (with icons)
+	Attributes with diagrams
+	Seminal Texts
+	Architecture topics
+
+Research
+	Author background
+	Papers
+	Student work
+	Blog
+
+Architecture topics:
+Overview relevance:
+	Morphology
+	Tactical: 
+	Landscape:
+	Parametric/Cellular Automota
+	Slow Evolution
+	Crowd Sourced Wikis
+	Fractals/PowerLaws
+	Informalities
+	etc.
+
+Links (within each architecture topic and as overview links):
+	Books
+	Articles
+	Talks
+	Podcasts
+
+Diagrams/Icons
+Dissipative Structure
+Feedback
+Bifurcations
+Agent interaction
+Networks/Nodes
+Stigmergy
+Tags
+Powerlaw distribution
+Fractal 
+Fitness Landscape/Basin of Attraction
+Perturbation
+
+
+etc.
