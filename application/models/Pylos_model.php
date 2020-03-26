@@ -2164,7 +2164,7 @@ class Pylos_model extends CI_Model {
 		//$filenames = $images['name'];
 
 		if ($type == 'file') {
-			$config['allowed_types'] = 'zip|xlsx|pptx';
+			$config['allowed_types'] = 'zip|xlsx|xlsm|pptx';
 			$config['upload_path'] = './store/pylosfiles';
 			$config['return_path'] = '/store/pylosfiles/';
 			$config['max_size']	= '550000';
