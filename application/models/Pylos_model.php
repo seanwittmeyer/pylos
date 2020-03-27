@@ -2258,7 +2258,7 @@ class Pylos_model extends CI_Model {
 		    $output = array('filename' => $path);
 		} elseif ($success === false) {
 		    switch ($type) {
-		    	case ('file'): $output = array('error'=>'Uh oh... Please upload a zip file no larger than 500mb.'); break;
+		    	case ('file'): $output = array('error'=>'Uh oh... Please upload a zip file no larger than 510mb.'); break;
 		    	case ('guide'): $output = array('error'=>'Uh oh... Please upload a zip file no larger than 500mb.'); break;
 		    	case ('grasshopper'): $output = array('error'=>'Blast, make sure your zip file is less than 500mb.'); break;
 		    	case ('presentation'): $output = array('error'=>'Hold up professor, we only take PDF files less than 100mb.'); break;
