@@ -3,8 +3,8 @@ Pylos
 
 Computational design resource repository and knowledge sharing platform for architecture firms.
 
-![Banner](https://user-images.githubusercontent.com/2829600/71564012-31105580-2a91-11ea-9ad7-ef1278411b35.png)
-![Banner](https://user-images.githubusercontent.com/2829600/71564012-31105580-2a91-11ea-9ad7-ef1278411b35.png)
+![Banner](https://raw.githubusercontent.com/seanwittmeyer/pylos/master/docs/Pylos%20Brand.png?token=AAJENGJ6OY23RLYL4K3INH26Q6IZ2)
+![Banner](https://raw.githubusercontent.com/seanwittmeyer/pylos/master/docs/homepage.png?token=AAJENGKCWM4QZES4M5A5V426Q6I6A)
 
 Installation
 --------------------------
@@ -37,7 +37,6 @@ Security
 --------------------------
 
 If you discover a security vulnerability within this package, please send an email to Sean Wittmeyer at sean.wittmeyer@zgf.com. All security vulnerabilities will be promptly addressed.
-
 
 License
 --------------------------
