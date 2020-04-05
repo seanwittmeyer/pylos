@@ -1,9 +1,9 @@
-![Banner](https://raw.githubusercontent.com/seanwittmeyer/pylos/master/docs/Pylos%20Brand.png?token=AAJENGJ6OY23RLYL4K3INH26Q6IZ2)
+![Pylos](docs/Pylos%20Brand.png?token=AAJENGJ6OY23RLYL4K3INH26Q6IZ2)
 ==========================
 
 Computational design resource repository and knowledge sharing platform for architecture firms.
 
-![Banner](https://raw.githubusercontent.com/seanwittmeyer/pylos/master/docs/homepage.png?token=AAJENGKCWM4QZES4M5A5V426Q6I6A)
+![Pylos Screenshot](docs/homepage.png?token=AAJENGKCWM4QZES4M5A5V426Q6I6A)
 
 Installation
 --------------------------
