@@ -35,7 +35,7 @@ The way we have been using the platform started with adding any and all content 
 Security
 --------------------------
 
-If you discover a security vulnerability within this package, please send an email to Sean Wittmeyer at sean.wittmeyer@zgf.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an email to Sean Wittmeyer at theseanwitt [at] gmail [dot] com. All security vulnerabilities will be promptly addressed.
 
 License
 --------------------------
